@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/prawstho/WeekFour/issues"
   },
-  "homepage": "https://github.com/prawstho/WeekFour#readme"
+  "homepage": "https://github.com/prawstho/WeekFour#readme",
+  "dependencies": {
+    "date-fns": "^2.29.3",
+    "uuid": "^9.0.0"
+  }
 }

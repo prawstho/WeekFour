@@ -4,12 +4,12 @@ class MyEmitter extends EventEmitter {};
 const myEmitter = new MyEmitter();
 
 // load the logEvents module
-//const logEvents = require('./logEvents');
+const logEvents = require('./logEvents');
 
 myEmitter.addListener('route', (event, level, msg) => {
     const d = new Date();
     console.log(d.toLocaleString() + ' * ' + level.toUpperCase() + ' * ' + msg);
-//    logEvents(event, level, msg);
+    logEvents(event, level, msg);
 });
 
 // this is the index page
