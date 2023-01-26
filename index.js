@@ -34,6 +34,12 @@ const server = http.createServer((request, response) => {
             response.setHeader('Location', '/about');
             response.end();
             break;
+        case '/synchronous':
+            routes.synchronous('./files/', 'sync file mgmt', response);
+            break;
+        case '/asynchronous':
+            routes.asynchronous('./files/', 'async file mgmt', response);
+            break;
         default:
             path += "404.html";
             response.statusCode = 404;
